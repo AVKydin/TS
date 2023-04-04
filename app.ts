@@ -37,7 +37,7 @@ const showSum = (a:number, b:number):void => console.log((a + b))
 //     return someUser
 // }
 
-const incAge = (someUser:any, inc:number):number =>{
+const incAge = (someUser:IUser, inc:number):object =>{
     someUser.age +=inc;
     return someUser
 }
