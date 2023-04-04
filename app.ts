@@ -24,12 +24,12 @@ const user:IUser = {name:'Max', age:33, gender:'male'}
 // function sum(a,b){
 //     return a+b
 // }
-const sum =(a:number, b:number)=> a+b;
+const sum =(a:number, b:number):number=> a+b;
 
 // function showSum(a,b){
 //     console.log(a + b);
 // }
-const showSum = (a:number, b:number)=> console.log((a + b))
+const showSum = (a:number, b:number):void => console.log((a + b))
 
 
 // function incAge(someUser, inc){
@@ -37,8 +37,8 @@ const showSum = (a:number, b:number)=> console.log((a + b))
 //     return someUser
 // }
 
-const incAge = (someUser, inc) =>{
-    someUser.age+=inc;
+const incAge = (someUser:any, inc:number):number =>{
+    someUser.age +=inc;
     return someUser
 }
 
